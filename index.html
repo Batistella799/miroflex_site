@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+  <title>Miroflex — Poltronas para centros religiosos, escolas e hotelaria</title>
+  <meta name="description" content="Miroflex: a melhor linha de poltronas para centros religiosos, escolas e hotelaria. Veja projetos montados e nosso catálogo de modelos." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://miroflex.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Miroflex — Poltronas de qualidade" />
+  <meta property="og:description" content="Catálogo de poltronas para centros religiosos, escolas e hotelaria." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://miroflex.vercel.app/" />
+  <meta property="og:site_name" content="Miroflex" />
+  <meta property="og:image" content="https://miroflex.vercel.app/imagens/logo-miroflex.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Miroflex — Poltronas de qualidade" />
+  <meta name="twitter:description" content="Catálogo de poltronas para centros religiosos, escolas e hotelaria." />
+  <meta name="twitter:image" content="https://miroflex.vercel.app/imagens/logo-miroflex.png" />
+
+  <!-- Performance -->
+  <link rel="preload" as="image" href="imagens/Image-Fundo.jpg" imagesrcset="imagens/Image-Fundo.jpg 1280w" imagesizes="100vw" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Topo do site Miroflex">
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="topo-logo">
+      <img
+        src="imagens/logo-miroflex.png"
+        alt="Miroflex - Logo"
+        class="logo"
+        width="400"
+        height="300"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="conteudo" role="main">
+    <!-- HERO -->
+    <section id="hero" aria-labelledby="hero-titulo">
+      <h2 id="hero-titulo">A MELHOR LINHA DE POLTRONAS DO BRASIL</h2>
+      <ul class="segmentos" aria-label="Segmentos atendidos">
+        <li>CENTROS RELIGIOSOS</li>
+        <li>ESCOLAS</li>
+        <li>HOTELARIA</li>
+      </ul>
+      <p class="citacao">"A porta que Deus abre ninguém fecha"</p>
+    </section>
+
+    <!-- PROJETOS MONTADOS -->
+    <section id="instalacoes" aria-labelledby="instalacoes-titulo">
+      <div id="galeria-projetos" class="galeria-projetos"></div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" aria-labelledby="produtos-titulo">
+      <h2 id="produtos-titulo">Nossos Produtos:</h2>
+      <div id="lista-produtos"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 Miroflex Cadeiras. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- BOTÕES FLUTUANTES -->
+  <nav class="flutuantes" aria-label="Acesso rápido a redes sociais e contato">
+    <a
+      href="https://wa.me/5544998462028?text=Ol%C3%A1%2C%20encontrei%20a%20Miroflex%20pelo%20site%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos.%20Pode%20me%20ajudar%3F"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp Miroflex"
+      class="btn-social btn-social--whats"
+    >
+      <img src="imagens/Image-whats.png" alt="WhatsApp" width="32" height="32" loading="lazy" decoding="async" />
+    </a>
+    <a
+      href="https://www.instagram.com/miroflexoficial/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram Miroflex"
+      class="btn-social btn-social--insta"
+    >
+      <img src="imagens/Image-insta.png" alt="Instagram" width="32" height="32" loading="lazy" decoding="async" />
+    </a>
+  </nav>
+
+  <!-- BOTÃO CATEGORIAS -->
+  <button id="btn-categorias" class="btn-categorias" aria-haspopup="dialog" aria-controls="categorias-overlay">
+    Categorias
+  </button>
+
+  <!-- OVERLAY CATEGORIAS -->
+  <div id="categorias-overlay" class="categorias-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="categorias-page" role="document">
+      <header class="categorias-header">
+        <button id="btn-fechar-categorias" class="btn-fechar" aria-label="Voltar ao site">
+          ← Voltar ao site
+        </button>
+
+        <nav class="categorias-menu" aria-label="Categorias de cadeiras">
+          <button class="cat-item" data-cat="Escolares">Escolares</button>
+          <button class="cat-item" data-cat="Igrejas">Igrejas</button>
+          <button class="cat-item" data-cat="Hotelarias">Hotelarias</button>
+        </nav>
+      </header>
+
+      <main class="categorias-conteudo">
+        <h2 id="categorias-titulo" class="categorias-titulo">Categorias</h2>
+        <div id="categorias-lista" class="categorias-lista"></div>
+      </main>
+    </div>
+  </div>
+
+  <noscript>
+    Seu navegador está com JavaScript desativado. O site funciona, mas alguns recursos podem ficar limitados.
+  </noscript>
+
+  <script src="produtos.js" defer></script>
+</body>
+</html>
